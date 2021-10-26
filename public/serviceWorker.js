@@ -7,3 +7,5 @@ const FILES_TO_CACHE = [
     '/index.js',
 ];
 
+// transaction schema, is this connected to index.js??
+// name, value, date?? 
