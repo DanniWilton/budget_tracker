@@ -1,11 +1,12 @@
-
+const CACHE_NAME = "progressive-web-app-v1";
+const DATA_CACHE_NAME = "data-cache-v1";
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
+    "/manifest.webmanifest",
     '/styles.css',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png',
-    '/index.js',
 ];
 
 self.addEventListener("install", (event) => {
@@ -79,6 +80,5 @@ self.addEventListener("fetch", function (event) {
     );
 
 });
-// transaction schema, is this connected to index.js??
-// name, value, date?? 
+
 
